@@ -1,3 +1,4 @@
+
 public class MathUtils {
     /**
      * divideNumbers -- a / b
@@ -20,19 +21,19 @@ public class MathUtils {
 
         /* Determine if the exponent is negative */
         boolean isNegative;
+
         if (exp < 0) {
             exp *= -1;
             isNegative = true;
         } else {
             isNegative = false;
         }
-        System.out.println(isNegative);
 
         /* Multiply the result by the base exp times
             Ex: base = 2, exp = 2
                --> res = 2, then res = 4 */
-        for (int i = 0; i < exp; i++) {
-           res = res * base;
+        for (int i = 1; i < exp; i++) {
+            res = res * base;
         }
 
         /* If it's a negative exponent, we should invert it! */
@@ -44,5 +45,5 @@ public class MathUtils {
         else {
             return res;
         }
-    }    
+    }
 }
